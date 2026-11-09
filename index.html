@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chatgaiya Voice Translator</title>
+
+<meta name="description" content="An AI-powered Chittagonian speech recognition and Standard Bangla translation project.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111411;
+    color: #E5F5E8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(1050px, 90%);
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    color: #BDF2C7;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.nav-label {
+    color: #A9BFAE;
+    font-size: 13px;
+}
+
+.hero {
+    margin-top: 65px;
+    padding: 65px 45px;
+    border-radius: 24px;
+    border: 1px solid #527D60;
+    background: linear-gradient(
+        135deg,
+        #25372B,
+        #1C2920 55%,
+        #18221B
+    );
+    box-shadow: 0 10px 40px rgba(95,190,125,0.08);
+}
+
+.eyebrow {
+    color: #A9E8B6;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(34px, 6vw, 55px);
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.highlight {
+    color: #A6EDB5;
+}
+
+.description {
+    color: #B7D1BC;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 23px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.primary {
+    background: linear-gradient(135deg, #BDF2C7, #88DCA1);
+    color: #17291C;
+    border: 1px solid #D2F7D8;
+}
+
+.primary:hover {
+    background: #D1F8D6;
+    transform: translateY(-2px);
+}
+
+.secondary {
+    background: #29382E;
+    color: #C7F1CE;
+    border: 1px solid #648F70;
+}
+
+.secondary:hover {
+    background: #354B3B;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.tags span {
+    background: #304537;
+    border: 1px solid #648F70;
+    border-radius: 30px;
+    color: #C7F1CE;
+    padding: 9px 15px;
+    font-size: 12px;
+}
+
+.section {
+    margin-top: 65px;
+}
+
+.section h2 {
+    color: #C7F1CE;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.section p {
+    color: #A9BFAE;
+    line-height: 1.9;
+    max-width: 800px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.card {
+    background: #1B211D;
+    border: 1px solid #354C3B;
+    border-radius: 15px;
+    padding: 23px;
+}
+
+.card h3 {
+    color: #C7F1CE;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #354C3B;
+    margin-top: 75px;
+    padding: 28px 0;
+    color: #91AB98;
+    font-size: 12px;
+    line-height: 2;
+}
+
+@media(max-width: 700px) {
+    .hero {
+        padding: 38px 23px;
+        margin-top: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div class="logo">Chatgaiya AI</div>
+    <div class="nav-label">Academic AI/ML Project</div>
+</nav>
+
+<main>
+
+<section class="hero">
+
+    <div class="eyebrow">
+        SPEECH RECOGNITION · NATURAL LANGUAGE PROCESSING
+    </div>
+
+    <h1>
+        Chatgaiya Voice<br>
+        <span class="highlight">Translator</span>
+    </h1>
+
+    <p class="description">
+        Breaking language barriers through AI.
+        Convert spoken Chittagonian dialect into
+        clear, written Standard Bangla using a
+        fine-tuned speech recognition model.
+    </p>
+
+    <div class="buttons">
+
+        <a
+            href="https://8b092cda766d053791.gradio.live/"
+            class="btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Launch Translator →
+        </a>
+
+        <a
+            href="https://github.com/sanzidafrin/chatgaiya-voice-translator"
+            class="btn secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Project Repository
+        </a>
+
+    </div>
+
+    <div class="tags">
+        <span>Chittagonian Speech</span>
+        <span>Standard Bangla</span>
+        <span>Whisper</span>
+        <span>LoRA Fine-tuning</span>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>About the Project</h2>
+
+    <p>
+        Chatgaiya Voice Translator is an academic
+        artificial intelligence project designed
+        to recognize spoken Chittagonian dialect
+        and generate its corresponding written
+        Standard Bangla transcription.
+
+        The system uses a fine-tuned Whisper-based
+        automatic speech recognition model.
+    </p>
+
+</section>
+
+<section class="section">
+
+    <h2>Key Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Audio Upload</h3>
+            <p>
+                Upload an audio recording containing
+                spoken Chittagonian dialect.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Voice Recording</h3>
+            <p>
+                Record speech directly through
+                your device's microphone.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Translation</h3>
+            <p>
+                Generate written Standard Bangla
+                from Chittagonian speech.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Technology Stack</h2>
+
+    <p>
+        Python · PyTorch · Hugging Face Transformers ·
+        Whisper · PEFT / LoRA · Gradio · Google Colab
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    <strong>Chatgaiya Voice Translator</strong>
+    <br>
+    Academic AI/ML Project · 2026
+</footer>
+
+</div>
+
+</body>
+</html>
